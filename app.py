@@ -1,7 +1,7 @@
 import streamlit as st
 import requests
 import pickle
-import gdown
+# import gdown
 import os
 import shutil
 import numpy as np
