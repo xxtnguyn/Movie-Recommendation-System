@@ -91,7 +91,7 @@ if selected_movie:
     st.markdown("### Selected Movie:")
     col1, col2 = st.columns([1, 4])
     with col1:
-        st.image(selected_movie_poster, use_column_width=True)
+        st.image(selected_movie_poster, use_container_width=True)
         # Center-align the title under the image
         st.markdown(
             f"<h5 style='text-align: center; color: white;'>{selected_movie}</h5>",
@@ -103,7 +103,7 @@ if selected_movie:
     cols = st.columns(5)
     for i, col in enumerate(cols):
         with col:
-            st.image(recommended_movie_posters[i], use_column_width=True)
+            st.image(recommended_movie_posters[i], use_container_width=True)
             # Center-align the recommendation titles under the images
             st.markdown(
                 f"<h5 style='text-align: center;'>{recommended_movie_names[i]}</h5>",
