@@ -68,8 +68,8 @@ Select a movie from the dropdown below, and we'll recommend similar movies for y
 """)
 
 # Load data
-movies = pd.read_csv('artifacts/movie_list.pkl')
-similarity = np.loadtxt('artifacts/similarity.pkl')
+movies = pickle.load(open('artifacts/movie_list.pkl','rb'))
+similarity = pickle.load(open('artifacts/similarity.pkl','rb'))
 
 # Dropdown for movie selection
 movie_list = movies['title'].values
