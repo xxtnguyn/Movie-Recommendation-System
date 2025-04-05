@@ -1,0 +1,5 @@
+# dependencies for the project
+streamlit
+
+# local packages
+-e .
